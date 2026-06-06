@@ -20,7 +20,7 @@ To run this project, you will need:
 
 Read the following [doc](./docs/TestEnvironment.md) to install and start the backend and frontend servers.
 
-Or, simply run `npm run install:and:start:all`.
+Or, simply run `npm install && npm run install:and:start:all`.
 
 ___
 
