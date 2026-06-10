@@ -19,6 +19,7 @@ const ThemeToggle = () => {
   return (
     <div className={styles.container}>
       <button
+        data-testid="theme-toggle"
         className={styles.button}
         onClick={toggleThemeHandler}
         aria-label={`theme ${theme} activated`}

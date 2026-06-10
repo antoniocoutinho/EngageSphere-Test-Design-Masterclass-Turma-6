@@ -38,7 +38,7 @@ export default function Messenger() {
   return (
     <div className={styles.container}>
       {isOpen && (
-        <div className={styles.box}>
+        <div className={styles.box} data-testid="messenger-form-box">
           <div className={styles.header}>
             <h2>How can we help you?</h2>
           </div>
@@ -53,6 +53,7 @@ export default function Messenger() {
               <input
                 autoComplete="off"
                 id="messenger-name"
+                data-testid="messenger-name-input"
                 type="text"
                 value={name}
                 onChange={event => setName(event.target.value)}
@@ -65,6 +66,7 @@ export default function Messenger() {
               <input
                 autoComplete="off"
                 id="email"
+                data-testid="messenger-email-input"
                 type="email"
                 value={email}
                 onChange={event => setEmail(event.target.value)}
@@ -75,6 +77,7 @@ export default function Messenger() {
               <label htmlFor="message" className='sr-only'>Type your message</label>
               <textarea
                 id="message"
+                data-testid="messenger-message-input"
                 value={message}
                 onChange={event => setMessage(event.target.value)}
                 placeholder="Type your message here"
@@ -83,6 +86,7 @@ export default function Messenger() {
               <button
                 type="submit"
                 className={styles.sendButton}
+                data-testid="messenger-send-button"
               >
                 <Send />
                 Send
@@ -92,6 +96,7 @@ export default function Messenger() {
         </div>
       )}
       <button
+        data-testid={isOpen ? 'close-messager-box' : 'open-messager-box'}
         onClick={() => setIsOpen(!isOpen)}
         className={styles.openCloseButton}
         aria-label={isOpen ? 'Close messenger' : 'Open messenger'}

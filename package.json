@@ -20,7 +20,8 @@
   "homepage": "https://github.com/wlsf82/EngageSphere/blob/main/README.md",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "concurrently": "^10.0.3"
+    "concurrently": "^10.0.3",
+    "cypress": "^15.16.0"
   },
   "browserslist": {
     "production": [
