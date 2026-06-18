@@ -1,7 +1,6 @@
 import styles from './Button.module.css'
 
 const Button = ({
-  dataTestId = '',
   primary = true,
   icon = null,
   text = '',
@@ -14,7 +13,6 @@ const Button = ({
         className={primary ? styles.button : styles.secondaryButton}
         onClick={disabled ? undefined : onClick}
         disabled={disabled}
-        data-testid={dataTestId}
       >
         {icon}
         {text}

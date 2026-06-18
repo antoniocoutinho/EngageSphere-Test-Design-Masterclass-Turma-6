@@ -8,11 +8,17 @@ describe('Customers API - GET /customers', () => {
         }).then((response) => {
             expect(response.status).to.eq(200);
 
-            // Body Validation (Customers)
             expect(response.body).to.have.property('customers').and.be.an('array');
-            // Validating the structure of the first customer object
             const firstCustomer = response.body.customers[0];
-            expect(firstCustomer).to.have.all.keys('id', 'name', 'employees', 'contactInfo', 'size', 'industry', 'address');
+            expect(firstCustomer).to.have.all.keys(
+                'id', 
+                'name', 
+                'employees', 
+                'contactInfo', 
+                'size', 
+                'industry',
+                'address'
+            );
 
             expect(firstCustomer.address).to.have.property('city');
             expect(firstCustomer.address).to.have.property('country');

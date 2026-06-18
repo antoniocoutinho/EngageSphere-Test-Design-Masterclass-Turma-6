@@ -8,7 +8,7 @@ const Input = ({ disabled, onChange }) => {
         type="text"
         id="name"
         autoComplete="off"
-        data-testid="greetings-name-input"
+        data-testid="name"
         placeholder="E.g., John Doe"
         onChange={onChange}
         disabled={disabled}
