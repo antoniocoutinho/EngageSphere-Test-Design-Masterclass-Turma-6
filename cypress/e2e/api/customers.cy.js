@@ -2,7 +2,6 @@ describe('Customers API - GET /customers', () => {
 
     const API_URL = Cypress.expose('API_URL')
     const CUSTOMERS_API_URL = `${Cypress.expose('API_URL')}/customers`
-    //const apiUrl = 'http://localhost:3001/customers?page=1&limit=10&size=All&industry=All';
 
     it('should returns the correct status and body structure', () => {
         cy.request({
