@@ -22,7 +22,7 @@ Read the following [doc](./docs/TestEnvironment.md) to install and start the bac
 
 Or, simply run `npm install && npm run install:and:start:all`.
 
-# Automation Test Project
+## Automation Test Project
 UI automation for EngageSphere app, part of Test Design Masterclass course from Talking About Testing shool.
 
 ## To run the tests in headless mode.
