@@ -7,11 +7,11 @@ describe('Customers API - GET /customers', () => {
         cy.request({
             method: 'GET',
             url: `${CUSTOMERS_API_URL}`
-        }).then((response) => {
-            expect(response.status).to.eq(200);
+        }).then(({ status, body }) => {
+            expect(status).to.eq(200);
 
-            expect(response.body).to.have.property('customers').and.be.an('array');
-            const firstCustomer = response.body.customers[0];
+            expect(body).to.have.property('customers').and.be.an('array');
+            const firstCustomer = body.customers[0];
             expect(firstCustomer).to.have.all.keys(
                 'id',
                 'name',
