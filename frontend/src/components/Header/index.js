@@ -8,7 +8,7 @@ const Header = ({ inputDisabled, inputChangeHandler }) => {
     <div className={styles.container}>
       <h1>EngageSphere</h1>
       <ThemeToggle />
-      <Input disabled={inputDisabled} onChange={inputChangeHandler}/>
+      <Input disabled={inputDisabled} onChange={inputChangeHandler} />
     </div>
   )
 }

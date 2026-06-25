@@ -23,14 +23,16 @@ Read the following [doc](./docs/TestEnvironment.md) to install and start the bac
 Or, simply run `npm install && npm run install:and:start:all`.
 
 ## Automation Test Project
+
 UI automation for EngageSphere app, part of Test Design Masterclass course from Talking About Testing shool.
 
 ## To run the tests in headless mode.
+
 `npm test`
 
-##  to open the Cypress App and run the tests in interactive mode.
-`npm run cy:open` 
+##  To open the Cypress App and run the tests in interactive mode.
 
+`npm run cy:open` 
 
 ___
 

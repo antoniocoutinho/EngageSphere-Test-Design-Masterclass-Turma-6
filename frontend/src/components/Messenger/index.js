@@ -96,7 +96,6 @@ export default function Messenger() {
         </div>
       )}
       <button
-        data-testid={isOpen ? 'close-messager-box' : 'open-messager-box'}
         onClick={() => setIsOpen(!isOpen)}
         className={styles.openCloseButton}
         aria-label={isOpen ? 'Close messenger' : 'Open messenger'}

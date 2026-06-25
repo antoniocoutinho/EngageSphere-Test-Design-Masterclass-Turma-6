@@ -43,20 +43,20 @@ const Table = ({
     <table border="1" className={styles.container}>
       <thead>
         <tr>
-          <th scope="col" data-testid="id-col">ID</th>
-          <th scope="col" data-testid="company-name-col">Company name</th>
-          <th scope="col" data-testid="industry-col" >Industry</th>
+          <th scope="col">ID</th>
+          <th scope="col">Company name</th>
+          <th scope="col">Industry</th>
           <th scope="col" onClick={sortNumberOfEmployeesHandler}>
-            <button onClick={sortNumberOfEmployeesHandler} data-testid="number-employees-col">
+            <button onClick={sortNumberOfEmployeesHandler}>
               Number of employees {sortCriteria === 'employees' && (sortOrder === 'asc' ? <span aria-label="ordering by number of employees asc">&uarr;</span> : <span aria-label="ordering by number of employees desc">&darr;</span>)}
             </button>
           </th>
           <th scope="col" onClick={sortSizeHandler}>
-            <button onClick={sortSizeHandler} data-testid="size-col">
+            <button onClick={sortSizeHandler}>
               Size {sortCriteria === 'size' && (sortOrder === 'asc' ? <span aria-label="ordering by size asc">&uarr;</span> : <span aria-label="ordering by size desc">&darr;</span>)}
             </button>
           </th>
-          <th scope="col" data-testid="action-col">Action</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>

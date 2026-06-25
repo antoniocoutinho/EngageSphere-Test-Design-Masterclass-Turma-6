@@ -10,13 +10,11 @@ const CookieConsent = ({ giveConsentClickHandler, declineConsentClickHandler }) 
         <p>By clicking "Accept," you consent to our use of cookies. If you click "Decline," we won't use cookies, and your personal information will not be tracked.</p>
         <div className={styles.buttons}>
           <Button
-            dataTestId="accept-cookie-button"
             primary={true}
             text="Accept"
             onClick={giveConsentClickHandler}
           />
           <Button
-            dataTestId="decline-cookie-button"
             primary={false}
             text="Decline"
             onClick={declineConsentClickHandler}
